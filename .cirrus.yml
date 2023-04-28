@@ -10,12 +10,12 @@ task:
     - name: 14-CURRENT
       compute_engine_instance:
         image: family/freebsd-14-0-snap
-    - name: 13.1-STABLE
+    - name: 13.2-STABLE
       compute_engine_instance:
-        image: family/freebsd-13-1-snap
-    - name: 13.1-RELEASE
+        image: family/freebsd-13-2-snap
+    - name: 13.2-RELEASE
       compute_engine_instance:
-        image: family/freebsd-13-1
+        image: family/freebsd-13-2
   script:
     - make
     - kldload ./gve.ko
